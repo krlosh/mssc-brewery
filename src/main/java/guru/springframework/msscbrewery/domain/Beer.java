@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Null;
 import javax.validation.constraints.Positive;
+import java.sql.Timestamp;
 import java.util.UUID;
 
 @Data
@@ -27,4 +28,8 @@ public class Beer {
 
     @Positive
     private Long upc;
+
+    private Timestamp createdDate;
+    private Timestamp lastUpdatedDate;
+
 }
